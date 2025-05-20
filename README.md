@@ -44,10 +44,10 @@ A estrutura do diretório do projeto é a seguinte:
 
 *projeto_final_ml/*
 *├── data/*
-*│   └── group_4_winequality.csv  # Seu dataset *
-*├── main.py                      # O script principal com todo o pipeline *
-*├── README.md                    # Este arquivo *
-*└── requirements.txt             # Lista de bibliotecas Python necessárias *
+*│   └── group_4_winequality.csv  # Seu dataset*
+*├── main.py                      # O script principal com todo o pipeline*
+*├── README.md                    # Este arquivo*
+*└── requirements.txt             # Lista de bibliotecas Python necessárias*
 
 ## 4. Como Executar o Projeto
 

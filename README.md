@@ -59,44 +59,10 @@ Certifique-se de ter o Python 3.9+ instalado. Recomenda-se o uso de um ambiente 
 
 ### 4.2. Configuração do Ambiente
 
-1.  **Clone o Repositório ou crie a estrutura de pastas:**
-    ```bash
-    mkdir projeto_final_ml
-    cd projeto_final_ml
-    mkdir data
-    ```
-2.  **Salve o Dataset:**
-    Coloque o arquivo `group_4_winequality.csv` dentro da pasta `data/`.
-3.  **Crie e Ative um Ambiente Virtual:**
-    * **Com `venv` (padrão do Python):**
-        ```bash
-        python -m venv venv
-        # No Windows:
-        .\venv\Scripts\activate
-        # No macOS/Linux:
-        source venv/bin/activate
-        ```
-    * **Com `conda`:**
-        ```bash
-        conda create -n vinho_ml python=3.9
-        conda activate vinho_ml
-        ```
-4.  **Instale as Dependências:**
-    Crie um arquivo `requirements.txt` na raiz do seu projeto (`projeto_final_ml/requirements.txt`) e adicione as seguintes linhas:
-    ```
-    pandas
-    numpy
-    scikit-learn
-    matplotlib
-    seaborn
-    # Se você for usar SMOTE para balanceamento de classes (descomentado no código):
-    # imbalanced-learn
-    ```
-    Em seguida, instale as bibliotecas usando pip:
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *Obs: Se você usa o `imbalanced-learn`, lembre-se de descomentar a linha no `requirements.txt` e no `main.py`.*
+1.  **Clone o Repositório, comando: **
+    *"git clone https://github.com/JorgePires279/satc_ml_dataset_vinhos.git"*
+2.  **Instale as dependencia, comando:**
+     *"pip install -r requirements.txt"*
 
 ### 4.3. Execução do Script Principal
 

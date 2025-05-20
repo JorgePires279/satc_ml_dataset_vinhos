@@ -42,12 +42,12 @@ As colunas incluem características como:
 
 A estrutura do diretório do projeto é a seguinte:
 
-projeto_final_ml/
-├── data/
-│   └── group_4_winequality.csv  # Seu dataset
-├── main.py                      # O script principal com todo o pipeline
-├── README.md                    # Este arquivo
-└── requirements.txt             # Lista de bibliotecas Python necessárias
+*projeto_final_ml/*
+*├── data/*
+*│   └── group_4_winequality.csv  # Seu dataset *
+*├── main.py                      # O script principal com todo o pipeline *
+*├── README.md                    # Este arquivo *
+*└── requirements.txt             # Lista de bibliotecas Python necessárias *
 
 ## 4. Como Executar o Projeto
 
@@ -59,11 +59,14 @@ Certifique-se de ter o Python 3.9+ instalado. Recomenda-se o uso de um ambiente 
 
 ### 4.2. Configuração do Ambiente
 
-1.  **Clone o Repositório, comando: **
-    *"git clone https://github.com/JorgePires279/satc_ml_dataset_vinhos.git"*
+1.  **Clone o Repositório, comando:**
+   ```bash
+    git clone https://github.com/JorgePires279/satc_ml_dataset_vinhos.git
+   ```
 2.  **Instale as dependencia, comando:**
-     *"pip install -r requirements.txt"*
-
+      ```bash
+     pip install -r requirements.txt
+      ```
 ### 4.3. Execução do Script Principal
 
 1.  **Navegue até o diretório raiz do projeto** no terminal (onde está o `main.py`).

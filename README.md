@@ -59,9 +59,8 @@ Certifique-se de ter o Python 3.9+ instalado. Recomenda-se o uso de um ambiente 
 
 ### 4.2. Configuração do Ambiente
 
-1.  **Clone o Repositório (se aplicável) ou crie a estrutura de pastas:**
+1.  **Clone o Repositório ou crie a estrutura de pastas:**
     ```bash
-    # Se você está começando do zero, crie as pastas manualmente:
     mkdir projeto_final_ml
     cd projeto_final_ml
     mkdir data

@@ -124,10 +124,10 @@ O projeto é dividido em duas partes principais, conforme o objetivo:
 
 **Análise dos Erros: Houve confusão entre as classes? Quais?**
 
-*Sim, houve confusão significativa entre as classes, principalmente devido ao desbalanceamento do dataset. A classe "Média" é a categoria majoritária, e os modelos frequentemente classificaram vinhos de qualidade "Baixa" e "Alta" incorretamente como "Média". Isso se deve ao viés do modelo em favor da classe mais abundante, impactando negativamente a precisão e o recall das classes minoritárias.*
+Sim, houve confusão significativa entre as classes, principalmente devido ao desbalanceamento do dataset. A classe "Média" é a categoria majoritária, e os modelos frequentemente classificaram vinhos de qualidade "Baixa" e "Alta" incorretamente como "Média". Isso se deve ao viés do modelo em favor da classe mais abundante, impactando negativamente a precisão e o recall das classes minoritárias.
 
 **Algum modelo se saiu melhor? Alguma feature foi decisiva?**
 
-*Sim, o Random Forest Classifier (Ajustado com GridSearchCV) demonstrou ser o melhor modelo de classificação. Ele superou os demais em acurácia (0.8353) e F1-Score ponderado (0.8329), mostrando que o ajuste de hiperparâmetros foi eficaz.
+Sim, o Random Forest Classifier (Ajustado com GridSearchCV) demonstrou ser o melhor modelo de classificação. Ele superou os demais em acurácia (0.8353) e F1-Score ponderado (0.8329), mostrando que o ajuste de hiperparâmetros foi eficaz.
 
-As features mais decisivas para a classificação da qualidade do vinho foram: álcool, acidez volátil, sulfatos, dióxido de enxofre total e ácido cítrico. Dentre elas, o álcool e a acidez volátil destacaram-se como os atributos físico-químicos mais importantes para distinguir as categorias de qualidade.*
+As features mais decisivas para a classificação da qualidade do vinho foram: álcool, acidez volátil, sulfatos, dióxido de enxofre total e ácido cítrico. Dentre elas, o álcool e a acidez volátil destacaram-se como os atributos físico-químicos mais importantes para distinguir as categorias de qualidade.

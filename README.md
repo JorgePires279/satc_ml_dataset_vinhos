@@ -135,7 +135,7 @@ O projeto é dividido em duas partes principais, conforme o objetivo:
 
 ## 7. Equipe
 
-* [Nome do Membro 1]
+* [Jorge Luiz Madeira Pires]
 * [Nome do Membro 2]
 * [Nome do Membro 3]
 

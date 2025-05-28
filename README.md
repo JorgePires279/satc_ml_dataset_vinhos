@@ -1,13 +1,11 @@
-# PROJETO DE MACHINE LEARNING UniSATC
+# PROJETO DE MACHINE LEARNING UniSATC: Predição e Classificação da Qualidade de Vinhos
+
+Este repositório contém o trabalho final da disciplina de Machine Learning, focado na aplicação de técnicas de regressão e classificação para analisar e prever a qualidade de vinhos.
 
 ##  AUTORES
 
 * Jorge Luiz Madeira Pires
 * Cristhian Cardoso Bertan
-
-# Projeto Final de Machine Learning: Predição e Classificação da Qualidade de Vinhos
-
-Este repositório contém o trabalho final da disciplina de Machine Learning, focado na aplicação de técnicas de regressão e classificação para analisar e prever a qualidade de vinhos.
 
 ## 1. Visão Geral do Projeto
 

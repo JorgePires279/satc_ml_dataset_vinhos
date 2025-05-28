@@ -1,6 +1,11 @@
 # satc_ml_dataset_vinhos
 Trabalho para fixação de conteúdo da matéria de Machine Learninf do curso de Engenharia de Computação UniSATC - 4 Fase 
 
+##  AUTORES
+
+* Jorge Luiz Madeira Pires
+* Cristhian Cardoso Bertan
+
 # Projeto Final de Machine Learning: Predição e Classificação da Qualidade de Vinhos
 
 Este repositório contém o trabalho final da disciplina de Machine Learning, focado na aplicação de técnicas de regressão e classificação para analisar e prever a qualidade de vinhos.
@@ -12,14 +17,10 @@ O objetivo principal deste projeto é construir um pipeline completo de Machine 
 * **Regressão:** Para prever a nota de qualidade do vinho como um valor contínuo (0 a 10).
 * **Classificação:** Para categorizar os vinhos em faixas de qualidade (e.g., Baixa, Média, Alta).
 
-Será realizada uma análise crítica dos resultados e das decisões tomadas em cada etapa.
-
 ## 2. Dataset Utilizado
 
-O dataset utilizado é o **Wine Quality Dataset**, fornecido para a equipe. Ele contém diversas variáveis físico-químicas de vinhos, juntamente com uma nota de qualidade sensorial (variando de 0 a 10), que é nossa variável alvo (`quality`).
+O dataset utilizado é o **Wine Quality Dataset**. Ele contém diversas variáveis físico-químicas de vinhos, juntamente com uma nota de qualidade sensorial (variando de 0 a 10), que é nossa variável alvo (`quality`).
 
-* **Nome do Arquivo:** `group_4_winequality.csv`
-* **Localização:** `data/group_4_winequality.csv`
 
 ### Colunas do Dataset:
 
@@ -45,8 +46,8 @@ A estrutura do diretório do projeto é a seguinte:
 ```text
 projeto_final_ml/
 ├── data/
-│   └── group_4_winequality.csv  # Seu dataset
-├── main.py                      # O script principal com todo o pipeline
+│   └── group_4_winequality.csv  # Pasta dataset
+├── main.py                      # O script  com todo a pipeline
 ├── README.md                    # Este arquivo
 └── requirements.txt             # Lista de bibliotecas Python necessárias
 ```
@@ -76,7 +77,7 @@ Certifique-se de ter o Python 3.9+ instalado. Recomenda-se o uso de um ambiente 
     ```bash
     python main.py
     ```
-3.  **Observe a Saída:** O script imprimirá logs no terminal sobre cada etapa do pipeline. Os gráficos (histogramas, scatter plots, matrizes de correlação e de confusão, importância das features) serão exibidos em janelas separadas.
+3.  **Observe a Saída:** O script imprimirá logs no terminal sobre cada etapa do pipeline. Os gráficos (histogramas, scatter plots, matrizes de correlação e de confusão, importância das features) serão exibidos em janelas separadas, nescessario fechar a janela atual para avançar para a próxima.
 
 ## 5. Partes do Projeto
 
@@ -124,21 +125,12 @@ O projeto é dividido em duas partes principais, conforme o objetivo:
 
 ## 6. Resultados e Conclusões
 
-(Esta seção deve ser preenchida por você após a execução e análise do código. Inclua aqui seus principais achados e interpretações. Por exemplo:)
+**Análise dos Erros: Houve confusão entre as classes? Quais?**
 
-* Qual modelo de regressão/classificação apresentou o melhor desempenho e por quê?
-* Quais features foram mais importantes para prever/classificar a qualidade do vinho em cada abordagem?
-* Houve classes que foram mais difíceis de classificar corretamente? Quais?
-* Como o desbalanceamento de classes (se houver) afetou os resultados e as métricas?
-* Quais são as limitações dos modelos e do dataset?
-* Sugestões para futuros trabalhos e melhorias.
+*Sim, houve confusão significativa entre as classes, principalmente devido ao desbalanceamento do dataset. A classe "Média" é a categoria majoritária, e os modelos frequentemente classificaram vinhos de qualidade "Baixa" e "Alta" incorretamente como "Média". Isso se deve ao viés do modelo em favor da classe mais abundante, impactando negativamente a precisão e o recall das classes minoritárias.*
 
-## 7. Equipe
+**Algum modelo se saiu melhor? Alguma feature foi decisiva?**
 
-* [Jorge Luiz Madeira Pires]
-* [Nome do Membro 2]
-* [Nome do Membro 3]
+*Sim, o Random Forest Classifier (Ajustado com GridSearchCV) demonstrou ser o melhor modelo de classificação. Ele superou os demais em acurácia (0.8353) e F1-Score ponderado (0.8329), mostrando que o ajuste de hiperparâmetros foi eficaz.
 
-## 8. Data de Entrega
-
-02/06/2025, 23:00h (via AVA)
+As features mais decisivas para a classificação da qualidade do vinho foram: álcool, acidez volátil, sulfatos, dióxido de enxofre total e ácido cítrico. Dentre elas, o álcool e a acidez volátil destacaram-se como os atributos físico-químicos mais importantes para distinguir as categorias de qualidade.*
